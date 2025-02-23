@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC Technology Inc. - Quality HVAC Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            animation: slideIn 1s ease-out;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .service {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.6s ease-out forwards;
+        }
+        
+        .service img {
+            width: 40%;
+            margin-left: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .service:hover img {
+            transform: scale(1.05);
+        }
+
+        .contact-form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.6s ease-out 0.3s forwards;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: border 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #004d99;
+        }
+        
+        button {
+            background-color: #004d99;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #003366;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 16px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.6s ease-out 0.6s forwards;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #eaf4ff;
+            padding: 40px 20px;
+            margin-top: 40px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .testimonial {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonial .quote {
+            font-style: italic;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .testimonial .author {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <script src="script.js" defer></script> <!-- Link to your script.js file -->
+</head>
+<body>
+    <header>HVAC Technology Inc. - Quality HVAC Services</header>
+    
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="service">
+            <div>
+                <h3>Installation</h3>
+                <p>We offer professional HVAC installation services for homes and businesses.</p>
+            </div>
+            <img src="images/installation.webp" alt="HVAC Installation">
+
+        </div>
+        <div class="service">
+            <div>
+                <h3>Repair</h3>
+                <p>Fast and reliable repair services for all HVAC systems.</p>
+            </div>
+            <img src="images/repair.jpg" alt="HVAC Repair">
+        </div>
+        <div class="service">
+            <div>
+                <h3>Maintenance</h3>
+                <p>Regular maintenance to keep your HVAC running efficiently.</p>
+            </div>
+            <img src="images/maintenance.jpg" alt="HVAC Maintenance">
+        </div>
+        
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Inquiry" rows="4" required></textarea>
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <p>For inquiries, please call: <strong>267 252 7719</strong></p>
+        </div>
+    </div> 
+
+    <Testimonials Section -->
+    <div class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p class="quote">"HVAC Technology Inc. provided us with outstanding service during our HVAC installation. The team was professional and quick, and we couldn’t be happier with the results!"</p>
+            <p class="author">- John D., Homeowner</p>
+        </div>
+        <div class="testimonial">
+            <p class="quote">"Our HVAC system was repaired in no time. Excellent customer service and attention to detail. I highly recommend them!"</p>
+            <p class="author">- Sarah W., Business Owner</p>
+        </div>
+        <div class="testimonial">
+            <p class="quote">"The maintenance services they provide are top-notch. Our system runs more efficiently than ever!"</p>
+            <p class="author">- James R., Facility Manager</p>
+        </div>
+    </div>
+</body>
+</html>  
+
